@@ -20,14 +20,14 @@ const behaviour_questions = [
   'I am always willing to help'
 ];
 
-const listItens = [];
+const listItems = [];
 
 let dragStartIndex;
 
-createList(behaviour_questions);
+createList();
 
-function createList(questions) {
-  [...questions]
+function createList() {
+  [...behaviour_questions]
     .forEach((question, index) => {
       const listItem = document.createElement('li');
 
@@ -35,9 +35,9 @@ function createList(questions) {
 
       listItem.innerHTML = `
         <span class="number">${index + 1}</span>
-        <div class="draggable"draggable="true">
-          <p class=Person-name">${person}</p>
-          <i class="fas fa=grip=lines"></i>
+        <div class="draggable" draggable="true">
+          <p class=question-name">${question}</p>
+          <i class="fa fa-magnet"></i>
         </div>
       `;
 
