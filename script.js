@@ -22,7 +22,7 @@ function createList() {
     .forEach((question, index) => {
       const listItem = document.createElement('li');
 
-      // listItem.classList.add('right'); test
+      // listItem.classList.add('over'); 
 
       listItem.setAttribute('data-index', index);
 
