@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+:root {
+  --border-color: #c9e4d7;
+  --background-color: #c3c7ca;
+  --text-color: #202020;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.draggable-list {
+  border: 2px solid var(--border-color);
+  color: var(--text-color);
+  padding: 0;
+  list-style: none;
+}
