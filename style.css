@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 :root {
-  --border-color: #c9e4d7;
-  --background-color: #c3c7ca;
-  --text-color: #202020;
+  --border-color: #F9A03F;
+  --background-color: #813405;
+  --background2-color: #D45113;
+  --text-color: #DDF9C1;
+  --text2-color: #F8DDA4;
 }
 
 * {
@@ -19,6 +21,7 @@ body {
   height: 100vh;
   margin: 0;
   font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text2-color);
 }
 
 .draggable-list {
@@ -26,4 +29,44 @@ body {
   color: var(--text-color);
   padding: 0;
   list-style: none;
+}
+
+.draggable-list li {
+  background-color: var(--background2-color);
+  display: flex;
+  flex: 1;
+}
+
+.draggable-list li:not(:last-of-type) {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.draggable-list .number {
+  background-color: var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  height: 60px;
+  width: 60px;
+}
+
+.draggable-list .question-name {
+  margin: 0 20px 0 0;
+}
+
+.draggable-list li.right .question-name {
+  color: lime;
+}
+.draggable-list li.wrong .question-name {
+  color: red;
+}
+
+.draggable {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px;
+  flex: 1;
 }

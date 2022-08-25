@@ -22,12 +22,14 @@ function createList() {
     .forEach((question, index) => {
       const listItem = document.createElement('li');
 
+      // listItem.classList.add('right'); test
+
       listItem.setAttribute('data-index', index);
 
       listItem.innerHTML = `
         <span class="number">${index + 1}</span>
         <div class="draggable" draggable="true">
-          <p class=question-name">${question}</p>
+          <p class="question-name">${question}</p>
           <i class="fa fa-magnet"></i>
         </div>
       `;
