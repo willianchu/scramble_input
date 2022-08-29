@@ -52,7 +52,8 @@ body {
 }
 
 .draggable-list li.over .draggable {
-  color: #EAEAEA
+  color: #EAEAEA;
+  background-color: var(--border-color);
 }
 
 .draggable-list .question-name {

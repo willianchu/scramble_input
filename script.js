@@ -42,28 +42,28 @@ function createList() {
     });
 }
 function dragStart() {
-  console.log('Event: ', 'dragStart');
+  // console.log('Event: ', 'dragStart');
 }
 
 function dragEnter() {
-  console.log('Event: ', 'dragEnter');
+  // console.log('Event: ', 'dragEnter');
+  this.classList.add('over');
 }
 
 function dragLeave() {
-  console.log('Event: ', 'dragLeave');
+  // console.log('Event: ', 'dragLeave');
+  this.classList.remove('over');
 }
 
 function dragOver() {
-  console.log('Event: ', 'dragOver');
+  // console.log('Event: ', 'dragOver');
 }
 
 function dragDrop() {
-  console.log('Event: ', 'dragsDrop');
+  // console.log('Event: ', 'dragsDrop');
 }
 
-function dragStart() {
-  console.log('Event: ', 'dragstart');
-}
+
 function addEventListeners() {
   const draggables = document.querySelectorAll('.draggable');
   const dragListItems = document.querySelectorAll('.draggable-list li');
