@@ -41,11 +41,14 @@ function createList() {
       addEventListeners();
     });
 }
-function dragStart() {
+function dragStart(e) {
   // console.log('Event: ', 'dragStart');
   dragStartIndex = +this.closest('li').getAttribute('data-index');
   // dragStartIndex = +this.getAttribute('data-index');
   console.log(dragStartIndex);
+  let target = EventUtil.getCurrentTarget(e);
+  target.style.cursor = 'drag';
+  return true;
 }
 
 function dragEnter() {

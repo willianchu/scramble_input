@@ -92,3 +92,50 @@ body {
 .check-btn:focus {
   outline: none;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  list-style-type: none;
+  gap: 20px;
+}
+
+li {
+  animation-name: lowerCase;
+  animation-duration: calc(var(--i) * 1s);
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+@keyframes lowerCase {
+  80% {
+    text-transform: lowercase;
+  }
+  100% {
+    text-transform: uppercase;
+  }
+}
+
+/* li {
+  animation-name: bubbly;
+  animation-duration: calc(var(--i) * 1s);
+    animation-fill-mode: forwards;
+  animation-timing-function: easy-in-out;
+}
+
+@keyframes bubbly {
+  0% {
+    opacity: 0;
+    /* transform: translateY(-100px); */
+    transform: scale(0);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    /* transform: translateY(0); */
+    transform: scale(1);
+  }
+} */
